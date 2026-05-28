@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initRemote() {
-    socket = new WebSocket('wss://serveur-projet-s4-karting.onrender.com');
+    socket = new WebSocket('wss://karting-a-gogo-server.onrender.com');
     socket.onclose = () => setTimeout(initRemote, 2000);
 }
 initRemote();
